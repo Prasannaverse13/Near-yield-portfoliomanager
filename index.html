@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEAR AI Yield Agent</title>
+    <script>
+      // Ensure process is defined before any scripts load
+      window.process = window.process || { 
+        env: { NODE_ENV: 'production' },
+        version: '',
+        nextTick: function(cb) { setTimeout(cb, 0); }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
